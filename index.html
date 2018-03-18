@@ -172,7 +172,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>刚开始看阮一峰老师的教程，用的是jekyll来搭建，最终跑起来了，不过问题很多。在本地jekyll环境安装一直有问题。先是 gem install jekyll时需要切换源，切换完之后，还要install bandle, 但是本地还是跑起来报错。后来调研了一下，果断选择了hexo。</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><p>###安装hexo<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo -g</span><br></pre></td></tr></table></figure></p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo -g</span><br></pre></td></tr></table></figure>
 <h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
@@ -183,7 +183,7 @@
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 <h3 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h3><p>安装<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/litten/hexo-theme-yilia.git</span><br></pre></td></tr></table></figure></p>
 <p>使用<br>将下载到的主题目录（如果是压缩包，请解压）移动到hexo的blog根目录中的themes/目录中，命名为yilia<br>更改hexo的blog根目录下面的_config.yml里面的theme: landscape为theme: yilia<br>执行hexo g根据主题生成相应的网页<br>执行hexo s，然后通过浏览器查看本地预览效果</p>
-<p>###注意<br>放在git后访问一直404.查了好多都说域名必须设置为git用户名，但是我设置的没问题啊。后来查到要改 _confg.yml.</p>
+<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>放在git后访问一直404.查了好多都说域名必须设置为git用户名，但是我设置的没问题啊。后来查到要改 _confg.yml.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:qinmeifang/qinmeifang.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
       
 
