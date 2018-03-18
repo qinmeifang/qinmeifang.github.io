@@ -14,7 +14,7 @@
 <meta property="og:url" content="https://qinmeifang.github.io/2018/03/18/gitHub搭建/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="刚开始看阮一峰老师的教程，用的是jekyll来搭建，最终跑起来了，不过问题很多。在本地jekyll环境安装一直有问题。先是 gem install jekyll时需要切换源，切换完之后，还要install bandle, 但是本地还是跑起来报错。后来调研了一下，果断选择了hexo。 Quick Start安装hexo1npm install hexo -g Create a new post1$">
-<meta property="og:updated_time" content="2018-03-18T13:52:36.000Z">
+<meta property="og:updated_time" content="2018-03-18T13:53:13.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitHub 博客搭建">
 <meta name="twitter:description" content="刚开始看阮一峰老师的教程，用的是jekyll来搭建，最终跑起来了，不过问题很多。在本地jekyll环境安装一直有问题。先是 gem install jekyll时需要切换源，切换完之后，还要install bandle, 但是本地还是跑起来报错。后来调研了一下，果断选择了hexo。 Quick Start安装hexo1npm install hexo -g Create a new post1$">
@@ -183,8 +183,8 @@
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-<h3 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h3><p>安装<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/litten/hexo-theme-yilia.git</span><br></pre></td></tr></table></figure></p>
-<p>使用<br>将下载到的主题目录（如果是压缩包，请解压）移动到hexo的blog根目录中的themes/目录中，命名为yilia<br>更改hexo的blog根目录下面的_config.yml里面的theme: landscape为theme: yilia<br>执行hexo g根据主题生成相应的网页<br>执行hexo s，然后通过浏览器查看本地预览效果</p>
+<h3 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h3><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/litten/hexo-theme-yilia.git</span><br></pre></td></tr></table></figure>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>将下载到的主题目录（如果是压缩包，请解压）移动到hexo的blog根目录中的themes/目录中，命名为yilia<br>更改hexo的blog根目录下面的_config.yml里面的theme: landscape为theme: yilia<br>执行hexo g根据主题生成相应的网页<br>执行hexo s，然后通过浏览器查看本地预览效果</p>
 <h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>放在git后访问一直404.查了好多都说域名必须设置为git用户名，但是我设置的没问题啊。后来查到要改 _confg.yml.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:qinmeifang/qinmeifang.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
       
